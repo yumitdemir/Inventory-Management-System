@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory Management System\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj": {}
+    "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory Management System\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj": {
+    "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory Management System\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj",
+        "projectUniqueName": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj",
         "projectName": "Inventory-Management-System",
-        "projectPath": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory Management System\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj",
+        "projectPath": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\Inventory-Management-System.csproj",
         "packagesPath": "C:\\Users\\umitd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory Management System\\Inventory-Management-System\\Inventory-Management-System\\obj\\",
+        "outputPath": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\umitd\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
