@@ -1,21 +1,69 @@
 ﻿@model IEnumerable<Product>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
-<body>
-   @foreach (var item in Model)
-{
-    <button class="btn-primary">
-        @item.Name
-        @item.Categorie.Name
-    </button>
-}
-</body>
-</html>
+
+  <table
+      style="width: 100%; caption-side: bottom"
+      id="ct-2efd2e3c-4e00-11ec-a93d-b34dba1f0acd"
+      class="table table-striped dataTable no-footer dtr-column"
+      aria-describedby="ct-2efd2e3c-4e00-11ec-a93d-b34dba1f0acd_info"
+    >
+      <thead>
+        <tr role="row">
+
+
+            <th style="width: 110px">
+                Name
+            </th>
+
+            <th style="width: 280px">
+                Description
+            </th>
+
+            <th style="width: 50px">
+                Price
+            </th>
+
+            <th style="width: 50px">
+                Quantity
+            </th>
+
+            <th style="width: 70px">
+                Code
+            </th>
+             <th style="width: 100px">
+                Supplier
+            </th>
+            <th style="width: 50px">
+                Category
+            </th>
+
+        </tr>
+      </thead>
+      <tbody>
+          @foreach (var item in Model)
+        {
+            <tr>
+                <td >@item.Name</td>
+                <td >
+                   
+                     @item.Description
+                </td>
+                <td >
+                   
+                     @item.Price
+                </td>
+                <td >
+                    @item.Quantity
+                </td>
+                <td >@item.ProductCode</td>
+                <td>
+                    @item.Supplier?.Name
+                </td>
+                <td >
+                    @item.Categorie?.Name
+                </td>
+            </tr>
+        }
+
+      </tbody>
+    </table>
