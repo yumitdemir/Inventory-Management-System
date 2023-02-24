@@ -42,8 +42,10 @@
       <tbody>
           @foreach (var item in Model)
         {
+           
             <tr>
-                <td >@item.Name</td>
+                 
+                <td >  @item.Name</td>
                 <td >
                    
                      @item.Description
@@ -57,12 +59,16 @@
                 </td>
                 <td >@item.ProductCode</td>
                 <td>
-                    @item.Supplier?.Name
+                    <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action=""> @item.Supplier?.Name</a>
+                   
                 </td>
                 <td >
-                    @item.Categorie?.Name
+
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">  @item.Categorie?.Name</a>
                 </td>
+              
             </tr>
+            
         }
 
       </tbody>
