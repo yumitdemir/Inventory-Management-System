@@ -42,7 +42,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "product1",
-    pattern: "product",
+    pattern: "product/{id?}",
     defaults: new { controller = "Product", action = "Index" });
 
 app.Run();

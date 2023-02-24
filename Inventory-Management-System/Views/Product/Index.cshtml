@@ -1,4 +1,33 @@
-﻿@model IEnumerable<Product>
+﻿@model dynamic
+
+@{
+    int nextPageIndex;
+    if(Model.id == 0)
+    {
+        nextPageIndex = 2;
+    }
+    else
+    {
+        nextPageIndex = Model.id+1;
+    }
+
+   int prevPageIndex = Model.id-1;
+   
+
+}
+<div class="d-flex">
+    @if (Model.id >1 )
+{
+        <div> <a class="btn-danger" asp-controller="Product" asp-action="Index" asp-route-id="@prevPageIndex">Previous</a>  </div>
+}
+
+@if (Model.id < Model.maxPageIndex)
+{
+    <div> <a class="btn-danger" asp-controller="Product" asp-action="Index" asp-route-id="@nextPageIndex">Next</a>  </div>
+}
+
+
+</div>
 
 
   <table
@@ -40,7 +69,7 @@
         </tr>
       </thead>
       <tbody>
-          @foreach (var item in Model.Skip(2).Take(2))
+        @foreach (var item in Model.products)
         {
            
             <tr>
@@ -73,3 +102,6 @@
 
       </tbody>
     </table>
+
+
+                
