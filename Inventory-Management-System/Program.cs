@@ -42,12 +42,15 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "product",
-    pattern: "product/{id?}",
+    pattern: "product/{id}",
     defaults: new { controller = "Product", action = "Index" });
 
 app.MapControllerRoute(
     name: "supplierDetail",
-    pattern: "supplier/{id?}",
+    pattern: "supplier/{id}/{showNum?}",
     defaults: new { controller = "SupplierDetail", action = "Index" });
+
+
+
 
 app.Run();

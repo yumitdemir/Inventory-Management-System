@@ -14,29 +14,35 @@ namespace Inventory_Management_System.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(int id)
+        public async Task<IActionResult> Index(int id, int showNum)
         {
+            if (showNum == 0)
+            {
+                showNum = 50;
+            }
             IEnumerable<Product> products = await _context.GetAllDataAsync();
-           var maxPageIndex = Math.Ceiling((double)products .Count()/ 50);
+            var maxPageIndex = Math.Ceiling((double)products.Count() / showNum);
             Console.WriteLine(maxPageIndex);
             //! If id doesn't exist in the link it will return 0
             if (id == 1 || id == 0)
             {
-                products = products.Take(50);
+                products = products.Take(showNum);
             }
             else
             {
-                
-                products = products.Skip((id - 1) * 50).Take(50);
+
+                products = products.Skip((id - 1) * showNum).Take(showNum);
             }
 
             dynamic data = new ExpandoObject();
             data.products = products;
             data.maxPageIndex = maxPageIndex;
             data.id = id;
+            data.showNum = showNum;
             return View(data);
         }
-      
+        
+       
 
 
     }

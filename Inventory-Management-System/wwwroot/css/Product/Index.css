@@ -1,3 +1,8 @@
 ﻿h1{
     color:red;
 }
+
+th,
+td {
+    border: 1px solid #dee2e6;
+}
