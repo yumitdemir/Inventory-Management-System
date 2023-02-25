@@ -6,3 +6,28 @@ th,
 td {
     border: 1px solid #dee2e6;
 }
+
+.pb-3 {
+   display:flex;
+   flex-direction:column;
+}
+
+
+.arrows{
+    gap:15px;
+    display:flex;
+    
+}
+#currentIndex {
+    font-size:20px;
+   margin:auto;
+ 
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

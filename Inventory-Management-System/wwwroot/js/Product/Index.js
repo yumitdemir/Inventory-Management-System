@@ -14,7 +14,10 @@ viewDropDown.addEventListener('change', () => {
     
     const selectedValue = viewDropDown.value;
 
-    let link = `https://localhost:7196/Product/Index/${currentIndexId}?showNum=${selectedValue}`
+    const newUrl = window.location.href.replace(/\/\d+\?showNum=\d+/, `/${1}?showNum=${selectedValue}`);
+
+
+    //let link = `https://localhost:7196/Product/Index/1?showNum=${selectedValue}`;
     
-    window.location.href = link;
+    window.location.href = newUrl;
 });
