@@ -1,23 +1,33 @@
 ﻿const viewDropDown = document.getElementById("viewDropDown");
 
-var currentView = document.getElementById('currentView').value;
-var currentIndexId = document.getElementById('currentIndexId').value;
+
+const urlParams = new URLSearchParams(window.location.search);
+const currentView = urlParams.get('showNum'); 
+
 
 //Auto select the view number on the dropdown
 viewDropDown.value = currentView;
 
 
-
-
-
 viewDropDown.addEventListener('change', () => {
+    const newView = viewDropDown.value.toString();
+
+    fetch('/api/Product/NewView', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newView)
+    })
+        .then(response => response.text())
+        .then(data => {
+            window.location.href = data;
+        });
+
+})
+
+
     
-    const selectedValue = viewDropDown.value;
-
-    const newUrl = window.location.href.replace(/\/\d+\?showNum=\d+/, `/${1}?showNum=${selectedValue}`);
 
 
-    //let link = `https://localhost:7196/Product/Index/1?showNum=${selectedValue}`;
-    
-    window.location.href = newUrl;
-});
+ 

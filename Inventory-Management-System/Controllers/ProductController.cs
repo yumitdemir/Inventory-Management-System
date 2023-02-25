@@ -3,6 +3,8 @@ using Inventory_Management_System.Interfaces;
 using Inventory_Management_System.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Drawing;
 using System.Dynamic;
 
 namespace Inventory_Management_System.Controllers
@@ -41,9 +43,18 @@ namespace Inventory_Management_System.Controllers
             data.showNum = showNum;
             return View(data);
         }
-        
-       
 
 
+        [HttpPost]
+        [Route("/api/Product/NewView")]
+        public IActionResult NewView([FromBody] string newView)
+        {
+           var a =  Url.Action("Index", "Product", new { id = 1, showNum = int.Parse(newView) });
+            return Ok(a);
+        }
     }
+
+
+
 }
+
