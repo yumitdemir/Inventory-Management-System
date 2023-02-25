@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\Inventory-Management-System.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\css\\Product\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Product\\Index.css"
+    },
+    {
       "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Product\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Product\\Index.js"
     },
     {
       "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\site.js",

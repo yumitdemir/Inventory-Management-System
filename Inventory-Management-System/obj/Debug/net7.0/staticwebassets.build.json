@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wf7qzXQttndo9i8G8JFKtcO65euM3eaIcqYWdvpQHvQ=",
+  "Hash": "PBAWs22MZwZTtD0X9NuzyUHTJm9dOWMwcXhwrxS4o2U=",
   "Source": "Inventory-Management-System",
   "BasePath": "_content/Inventory-Management-System",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Inventory-Management-System.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\css\\Product\\Index.css",
+      "SourceId": "Inventory-Management-System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\",
+      "BasePath": "_content/Inventory-Management-System",
+      "RelativePath": "css/Product/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Product\\Index.css"
+    },
+    {
       "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\css\\site.css",
       "SourceId": "Inventory-Management-System",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Product\\Index.js",
+      "SourceId": "Inventory-Management-System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\",
+      "BasePath": "_content/Inventory-Management-System",
+      "RelativePath": "js/Product/Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Product\\Index.js"
     },
     {
       "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\site.js",
