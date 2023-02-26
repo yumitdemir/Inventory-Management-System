@@ -22,11 +22,11 @@ namespace Inventory_Management_System.Repository
 
         public async Task<IEnumerable<Product>> GetAllDataAsync()
         {
-            return await _context.Products.Include(p => p.Supplier).Include( p=> p.Categorie).ToListAsync();
+            return await _context.Products.ToListAsync();
         }
         public async Task<Product> GetDataByIDAsync(int id)
         {
-            return await _context.Products.Include(p => p.Supplier).Include(p => p.Categorie).FirstOrDefaultAsync(i => i.Equals(id));
+            return await _context.Products.FirstOrDefaultAsync(i => i.Equals(id));
         }
         public bool Add(Product product)
         {
