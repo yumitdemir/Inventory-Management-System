@@ -12,9 +12,14 @@ namespace Inventory_Management_System.Repository
         public ProductRepository(ApplicationDbContext context)
         {
             _context = context;
+         
         }
 
-   
+        public async Task<IEnumerable<Supplier>> GetAllSupliers()
+        {
+            return await _context.Suppliers.ToListAsync();
+        }
+
         public async Task<IEnumerable<Product>> GetAllDataAsync()
         {
             return await _context.Products.Include(p => p.Supplier).Include( p=> p.Categorie).ToListAsync();

@@ -1,4 +1,7 @@
-﻿@model dynamic
+﻿
+<link href="/css/Product/Index.css" rel="stylesheet" asp-append-version="true" />
+
+@model dynamic
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-lR0NlX9YIaQmDmLbOjcyLmI02pjrUbGwOjOVDPe1zXTM9c3q0IvNkN0FyxjNl37s" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -16,29 +19,34 @@
         nextPageIndex = Model.id + 1;
     }
 }
-
+<div class="database-actions">
+    <div class="search-container">
+        <input class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-md btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </div>
+   
+   <div class="create-buttons">
+        <a class="btn btn-md btn-outline-primary">Creat New Category</a>
+        <a class="btn btn-md  btn-outline-primary">Creat New Supplier</a>
+        <a class="btn btn-md btn-primary">Creat New Product</a>
+    </div>
+</div>
 
 
 <div class="navigation">
-<select title="viewDropDown" id="viewDropDown">
-    <option value="10">10</option>
-    <option value="20">20</option>
-    <option value="50">50</option>
-    <option value="100">100</option>
-</select>
 
     <div class="arrows">
         @if (Model.id > 1)
         {
-            <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@prevPageIndex" asp-route-showNum="@Model.showNum">
-                <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+            <a class="btn page-link " asp-controller="Product" asp-action="Index" asp-route-id="@prevPageIndex" asp-route-showNum="@Model.showNum">
+                <span aria-hidden="true"><i class="bi bi-arrow-left arrow"></i></span>
             </a>
 
         }
         else
         {
             <a class="btn page-link disabled" disabled>
-                <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                <span aria-hidden="true"><i class="bi bi-arrow-left arrow"></i></span>
             </a>
         }
 
@@ -47,16 +55,25 @@
         @if (Model.id < Model.maxPageIndex)
         {
             <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@nextPageIndex" asp-route-showNum="@Model.showNum">
-                <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                <span aria-hidden="true"><i class="bi bi-arrow-right arrow"></i></span>
             </a>
         }
         else
         {
             <a class="btn page-link disabled" disabled>
-                <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                <span aria-hidden="true"><i class="bi bi-arrow-right arrow"></i></span>
             </a>
         }
     </div>
+
+
+    <select title="viewDropDown" id="viewDropDown">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+
 </div>
 
 
@@ -140,7 +157,7 @@
             @{
                 if (Model.id == 0 || Model.id == 1)
                 {
-                    <span class="btn page-link disabled" disabled aria-hidden="true">First</span>
+                    <span class="btn page-link disabled arrow" disabled aria-hidden="true">First</span>
                 }
                 else
                 {
@@ -158,14 +175,14 @@
             @if (Model.id > 1)
             {
                 <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@prevPageIndex" asp-route-showNum="@Model.showNum">
-                    <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                    <span aria-hidden="true"><i class="bi bi-arrow-left arrow"></i></span>
                 </a>
 
             }
             else
             {
                 <a class="btn page-link disabled" disabled>
-                    <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                    <span aria-hidden="true"><i class="bi bi-arrow-left arrow"></i></span>
                 </a>
             }
         </li>
@@ -179,7 +196,7 @@
                 {
 
                     b = b + 1;
-                    <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@b" asp-route-showNum="@Model.showNum">@b</a>
+                    <a class="btn page-link arrow" asp-controller="Product" asp-action="Index" asp-route-id="@b" asp-route-showNum="@Model.showNum">@b</a>
 
                 }
             }
@@ -187,7 +204,7 @@
             {
                 for (int i = 1; i < Model.id; i++)
                 {
-                    <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@i" asp-route-showNum="@Model.showNum">@i</a>
+                    <a class="btn page-link arrow" asp-controller="Product" asp-action="Index" asp-route-id="@i" asp-route-showNum="@Model.showNum">@i</a>
                 }
             }
 
@@ -222,7 +239,7 @@
                         a = 1;
                     }
                     a = a + 1;
-                    <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@a" asp-route-showNum="@Model.showNum">@a</a>
+                    <a class="btn page-link arrow" asp-controller="Product" asp-action="Index" asp-route-id="@a" asp-route-showNum="@Model.showNum">@a</a>
 
                 }
             }
@@ -244,7 +261,7 @@
             @if (Model.id < Model.maxPageIndex)
             {
                 <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@nextPageIndex" asp-route-showNum="@Model.showNum">
-                    <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                    <span aria-hidden="true"><i class="bi bi-arrow-right arrow"></i></span>
                 </a>
             }
             else
@@ -261,7 +278,7 @@
                 if (Model.id == Model.maxPageIndex)
                 {
 
-                    <span class="btn page-link disabled" disabled aria-hidden="true">Last</span>
+                    <span class="btn page-link disabled arrow" disabled aria-hidden="true">Last</span>
 
                 }
                 else

@@ -1,6 +1,5 @@
 ﻿const viewDropDown = document.getElementById("viewDropDown");
 
-
 const urlParams = new URLSearchParams(window.location.search);
 const currentView = urlParams.get('showNum'); 
 

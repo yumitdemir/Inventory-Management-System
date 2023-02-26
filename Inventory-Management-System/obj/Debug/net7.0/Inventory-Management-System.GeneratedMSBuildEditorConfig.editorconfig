@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/umitd/OneDrive/Desktop/Inventory-Management-System/Inventory-Management-System/Views/Product/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/umitd/OneDrive/Desktop/Inventory-Management-System/Inventory-Management-System/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,10 +38,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/umitd/OneDrive/Desktop/Inventory-Management-System/Inventory-Management-System/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/umitd/OneDrive/Desktop/Inventory-Management-System/Inventory-Management-System/Views/SupplierDetail/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJEZXRhaWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/umitd/OneDrive/Desktop/Inventory-Management-System/Inventory-Management-System/Views/_ViewImports.cshtml]

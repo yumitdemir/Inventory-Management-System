@@ -21,3 +21,7 @@ body {
   margin-bottom: 60px;
 }
 
+#nav-bar {
+    background-color: #3E54AC;
+    padding:12px;
+}

@@ -2,9 +2,13 @@
     color:red;
 }
 
-th,
+
 td {
-    border: 1px solid #dee2e6;
+    border: 1px solid #F1F6F5;
+}
+th {
+    color: #6d81d1;
+    border-bottom: 1px solid #00337C;
 }
 
 .pb-3 {
@@ -13,10 +17,10 @@ td {
 }
 
 
-.arrows{
-    gap:15px;
-    display:flex;
-    
+.arrows {
+    gap: 15px;
+    display: flex;
+  
 }
 #currentIndex {
     font-size:20px;
@@ -31,3 +35,79 @@ td {
     justify-content: space-between;
     margin-bottom: 10px;
 }
+body {
+    background-color: #EEEEEE;
+}
+.arrow {
+    color: #3E54AC;
+}
+
+#viewDropDown {
+    color: #2B3467;
+}
+
+.search-container {
+    display: flex;
+    gap: 15px;
+}
+
+.search-container input {
+    width:400px;
+}
+    .search-container button {
+        border-color: #3E54AC;
+        color: #3E54AC;
+    }
+.search-container button:hover {
+    background-color: #3E54AC;
+}
+
+.database-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #BAD7E9;
+    border-radius:15px;
+}
+.create-buttons a:nth-child(1) {
+    color: #3E54AC;
+    border-color: #3E54AC;
+}
+.create-buttons a:nth-child(1):hover {
+    background-color: #3E54AC;
+    color: white;
+    border-color: #3E54AC;
+}
+
+.create-buttons a:nth-child(2) {
+    color: #3E54AC;
+    border-color: #3E54AC;
+}
+
+    .create-buttons a:nth-child(2):hover {
+        background-color: #3E54AC;
+        color: white;
+        border-color: #3E54AC;
+    }
+
+
+
+
+
+
+.create-buttons a:nth-child(3) {
+    background-color: #3E54AC;
+    border-color: #3E54AC;
+}
+
+.create-buttons a:nth-child(3):hover {
+    background-color: white;
+    border-color: #3E54AC;
+    color: #3E54AC;
+
+}
+
+
+
+

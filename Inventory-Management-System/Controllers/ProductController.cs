@@ -4,6 +4,7 @@ using Inventory_Management_System.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Dynamic;
 
@@ -46,12 +47,62 @@ namespace Inventory_Management_System.Controllers
 
 
         [HttpPost]
-        [Route("/api/Product/NewView")]
+         [Route("api/Product/NewView")]
         public IActionResult NewView([FromBody] string newView)
         {
            var a =  Url.Action("Index", "Product", new { id = 1, showNum = int.Parse(newView) });
             return Ok(a);
         }
+
+
+
+        public class InputString
+        {
+            public string dataString { get; set; }
+        }
+
+        [HttpPost]
+        [Route("api/CreateProduct/Suppliers")]
+        public async Task<IActionResult> SuppliersList([FromBody] InputString data)
+        {
+            Console.WriteLine("test");
+            IEnumerable<Supplier> allSuppliers = await _context.GetAllSupliers();
+
+            if (!string.IsNullOrEmpty(data.dataString))
+            {
+                var results = allSuppliers.Where(item => item.Name.ToLower().Contains(data.dataString.ToLower())).ToList();
+                return Ok(results);
+            }
+            
+            return Ok(data);
+        }
+
+
+
+        public  IActionResult CreateProduct()
+        {
+            Product product = new Product();
+
+            dynamic data = new ExpandoObject();
+            data.product = product;
+
+            return View(product);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateProduct(Product product)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            
+            _context.Add(product); //!add is async function I created on repostiroy
+            return View("Index");
+
+        }
+
+
     }
 
 
