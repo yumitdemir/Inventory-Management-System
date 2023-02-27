@@ -6,7 +6,7 @@ const hiddenSupplierInput = document.querySelector("#hiddenSupplierInput");
 
 let clicked = false;
 searchInput.addEventListener('keyup', () => {
-    
+   
 
     if (clicked) {
         searchInput.value = "";
