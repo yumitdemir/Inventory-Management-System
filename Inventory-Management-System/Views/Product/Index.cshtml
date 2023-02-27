@@ -173,7 +173,7 @@
                 }
                 else
                 {
-                    <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="0" asp-route-showNum="@Model.showNum">
+                    <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="1" asp-route-showNum="@Model.showNum">
                         <span aria-hidden="true">First</span>
                     </a>
                 }
@@ -204,7 +204,7 @@
             if (Model.id >= 5)
             {
                 var b = Model.id - 5;
-                for (int i = 6; i != 1; i--)
+                for (int i = 5; i != 1; i--)
                 {
 
                     b = b + 1;
@@ -235,6 +235,7 @@
             }
 
         }
+
         <li class="page-item active"><a class="page-link" href="#">@currentIndex</a></li>
 
 
@@ -257,13 +258,18 @@
             }
             else
             {
-                for (int i = 0; i < Model.maxPageIndex - Model.id; i++)
+
+                if (Model.id != Model.maxPageIndex)
                 {
+                    for (int i = 0; i < Model.maxPageIndex - Model.id; i++)
+                    {
+                        a = a + 1;
+                        <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@nextPageIndex" asp-route-showNum="@Model.showNum">@a</a>
 
-                    a = a + 1;
-                    <a class="btn page-link" asp-controller="Product" asp-action="Index" asp-route-id="@nextPageIndex" asp-route-showNum="@Model.showNum">@a</a>
-
+                    }
                 }
+               
+                
             }
 
 
