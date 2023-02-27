@@ -54,6 +54,7 @@ namespace Inventory_Management_System.Controllers
             data.showNum = showNum;
             data.suppliers = suppliers;
             data.categories = categories;
+            data.searchInput = searchInput;
             return View(data);
         }
 
@@ -159,11 +160,22 @@ namespace Inventory_Management_System.Controllers
 
         }
 
+        
+        public async Task<IActionResult> DeleteProduct(int productId , int id ,string searchInput, int showNum)
+        {
+            
+            Product product = await _context.GetDataByIDAsync(productId);
+            _context.Delete(product);
+
+            return RedirectToAction("Index", new { id = id, searchInput = searchInput, showNum = showNum });
+        }
+
+    }
 
 
     }
 
 
 
-}
+
 

@@ -1,5 +1,4 @@
 ﻿
-
 <link href="/css/Product/Index.css" rel="stylesheet" asp-append-version="true" />
 
 @model IndexDataProduct
@@ -87,7 +86,7 @@
       <thead>
         <tr role="row">
 
-
+             
             <th style="width: 110px">
                 Name
             </th>
@@ -113,6 +112,10 @@
             <th style="width: 50px">
                 Category
             </th>
+            <th style="width: 0px">
+                Actions
+            </th>
+            
 
         </tr>
       </thead>
@@ -121,7 +124,6 @@
         {
            
             <tr>
-                 
                 <td >  @item.Name</td>
                 <td >
                    
@@ -155,7 +157,15 @@
                         @categoryName
                     </a>
                 </td>
-              
+                <td>
+                    <div class="d-flex justify-content-around ">
+                        <a asp-action="EditProduct" asp-controller="Product" asp-route-id="@item.ProductId"> <i class="fa-solid fa-pen-to-square"></i></a>
+
+
+                        <a asp-action="DeleteProduct" asp-controller="Product" asp-route-productId="@item.ProductId" asp-route-id="@Model.id" asp-route-searchInput="@Model.searchInput" asp-route-showNum="@Model.showNum"><i class="fa-sharp fa-solid fa-trash"></i></a>
+                    </div>
+                  </td>
+                
             </tr>
             
         }

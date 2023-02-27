@@ -9,5 +9,7 @@
         public IEnumerable<Supplier> suppliers { get; set; }
 
         public IEnumerable<Categorie> categories { get; set; }
+
+        public string searchInput { get; set; }
     }
 }
