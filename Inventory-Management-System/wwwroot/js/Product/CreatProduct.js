@@ -1,12 +1,4 @@
-﻿let searchable = [
-    'Elastic',
-    'PHP',
-    'Something about CSS',
-    'How to code',
-    'JavaScript',
-    'Coding',
-    'Some other item',
-];
+﻿
 const searchWrapper = document.querySelector('.wrapper');
 const resultsWrapper = document.querySelector('.results');
 const searchInput = document.querySelector("#supplierSearchInput");
@@ -18,15 +10,16 @@ searchInput.addEventListener('keyup', () => {
 
     if (clicked) {
         searchInput.value = "";
-        hiddenSupplierInput.value = searchInput.value;
-
-    }
-
+        hiddenSupplierInput.value = "";
+      
+       
+    } 
     clicked = false;
     
     
+    
     let input = searchInput.value;
-    console.log(input);
+  
     controller = new AbortController();
     const data = {
         dataString: input,
@@ -46,9 +39,6 @@ searchInput.addEventListener('keyup', () => {
             return response.json();
         })
         .then(data => {
-
-            console.log(data)
-         
             
             resultsWrapper.innerHTML = "";
             renderResults(data);
@@ -77,9 +67,8 @@ function renderResults(results) {
             const liElement = document.createElement('li');
             liElement.textContent = `${item.name} - ID:${item.supplierId}`;
             liElement.addEventListener('click', (event) => {
-
-                searchWrapper.classList.remove('show');
                 clicked = true;
+                searchWrapper.classList.remove('show');
                 searchInput.value = item.name;
                 hiddenSupplierInput.value = item.supplierId;
                 

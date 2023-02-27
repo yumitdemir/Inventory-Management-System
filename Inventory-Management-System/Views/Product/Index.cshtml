@@ -148,7 +148,7 @@
                 <td >
                     <a class="nav-link text-dark"> 
                         @{
-                            var categoryName = Model.suppliers.FirstOrDefault(a => a.SupplierId == item?.CategoryId).Name;
+                            var categoryName = Model.categories.FirstOrDefault(a => a.CategoryId == item?.CategoryId).Name;
                         }
                         @categoryName
                     </a>

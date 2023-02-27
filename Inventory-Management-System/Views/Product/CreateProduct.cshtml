@@ -30,9 +30,10 @@
     </div>
      <div class="form-group">
         <label asp-for="SupplierId">Supplier</label>
+        <input asp-for="SupplierId" id="hiddenSupplierInput" value="" style="display:none;">
     <div class="container">
         <div class="wrapper">
-           
+                
           <input type="text" name="search" id="supplierSearchInput" placeholder="Type to search" autocomplete="chrome-off">
           <button><i class="fa fa-search"></i></button>
           <div class="results">
