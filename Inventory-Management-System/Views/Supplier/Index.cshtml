@@ -2,7 +2,9 @@
 
 <link href="/css/Supplier/Index.css" rel="stylesheet" asp-append-version="true" />
 
-
+<div id="titleProductList" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1>Suppliers List</h1>
+</div>
 
 @{
     //prevPageIndex , nextPageIndex
@@ -18,6 +20,7 @@
         nextPageIndex = Model.id + 1;
     }
 }
+<div id="tableContent">
 <div class="database-actions">
     <div class="search-container">
         <input id="searchInput" class="form-control  mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -283,7 +286,7 @@
 
     </ul>
 </nav>
-
+</div>
 <script src="/js/supplier/Index.js"></script>
 
 

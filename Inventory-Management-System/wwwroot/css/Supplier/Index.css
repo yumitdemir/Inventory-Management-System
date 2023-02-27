@@ -1,5 +1,6 @@
-﻿h1 {
-    color: red;
+﻿
+h1 {
+    color: #EB455F;
 }
 
 
@@ -107,8 +108,8 @@ body {
     border-color: #3E54AC;
 }
 
-    .create-buttons a:nth-child(3):hover {
-        background-color: white;
-        border-color: #3E54AC;
-        color: #3E54AC;
-    }
+.create-buttons a:nth-child(3):hover {
+background-color: white;
+border-color: #3E54AC;
+color: #3E54AC;
+}

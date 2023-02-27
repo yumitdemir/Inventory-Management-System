@@ -12,16 +12,59 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+body {
+    
+        height: 100vh;
+}
 html {
   position: relative;
   min-height: 100%;
 }
+#nav-bar{
+    padding:20px;
+    font-size:20px;
+    width:100%;
 
-body {
-  margin-bottom: 60px;
+}
+
+
+header {
+    min-height: 100vh;
+    background-color: rgb(9,25,42);
+    width: 20%;
+}
+
+
+
+
+#nav-bar .nav-item:hover {
+    background-color: rgb(34,80,129);
 }
 
 #nav-bar {
-    background-color: #3E54AC;
-    padding:12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+   background-color: rgb(9,25,42);
+   
+}
+
+    #nav-bar li {
+        margin-bottom: 10px;
+    }
+
+    #nav-bar a {
+        text-decoration: none;
+    }
+
+    #nav-bar .active {
+        font-weight: bold;
+    }
+
+
+#navBrand {
+    font-size: 30px;
+    background-color: #EB455F;
+    color:white;
+    text-align:center;
 }
