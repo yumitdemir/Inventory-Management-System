@@ -1,6 +1,7 @@
 ﻿using Inventory_Management_System.Interfaces;
 using Inventory_Management_System.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Dynamic;
 
 namespace Inventory_Management_System.Controllers
 {
@@ -67,6 +68,26 @@ namespace Inventory_Management_System.Controllers
             return Ok(a);
         }
 
+
+        public IActionResult CreateSupplier()
+        {
+            Supplier supplier = new Supplier();
+            return View(supplier);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateSupplier(Supplier supplier)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            _context.Add(supplier); 
+            return RedirectToAction("Index", new { id = "1", showNum = 50 });
+
+
+        }
 
     }
 }

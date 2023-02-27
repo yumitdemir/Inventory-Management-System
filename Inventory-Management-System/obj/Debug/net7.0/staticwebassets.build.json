@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ASGT/IQMtQoI5LVYuh3VkxZp1dgG+yfX7Ipc2bd6vSE=",
+  "Hash": "5GCgolZbbhhxgwY9WqJnbrPBz1h2M7eyW2CtzgK0sy8=",
   "Source": "Inventory-Management-System",
   "BasePath": "_content/Inventory-Management-System",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\css\\Supplier\\Index.css",
+      "SourceId": "Inventory-Management-System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\",
+      "BasePath": "_content/Inventory-Management-System",
+      "RelativePath": "css/Supplier/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Supplier\\Index.css"
+    },
+    {
       "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\favicon.ico",
       "SourceId": "Inventory-Management-System",
       "SourceType": "Discovered",
@@ -168,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Supplier\\CreateSupplier.js",
+      "SourceId": "Inventory-Management-System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\",
+      "BasePath": "_content/Inventory-Management-System",
+      "RelativePath": "js/Supplier/CreateSupplier.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Supplier\\CreateSupplier.js"
     },
     {
       "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Supplier\\Index.js",

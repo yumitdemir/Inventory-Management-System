@@ -54,9 +54,22 @@ app.MapControllerRoute(
     defaults: new { controller = "Product", action = "CreateProduct" });
 
 app.MapControllerRoute(
+    name: "CreateProduct",
+    pattern: "/EditProduct/{id}",
+    defaults: new { controller = "Product", action = "EditProduct" });
+
+
+
+app.MapControllerRoute(
     name: "SupplierList",
     pattern: "/{id}/{showNum?}/{searchIndex?}",
-    defaults: new { controller = "Supplier", action = "CreateProduct" });
+    defaults: new { controller = "Supplier", action = "Index" });
+
+app.MapControllerRoute(
+    name: "CreateSupplier",
+    pattern: "/CreateSupplier",
+    defaults: new { controller = "Supplier", action = "CreateSupplier" });
+
 
 
 app.Run();

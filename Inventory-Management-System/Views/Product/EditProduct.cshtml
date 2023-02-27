@@ -1,0 +1,60 @@
+﻿@model EditViewModel
+<link href="/css/Product/CreatProduct.css" rel="stylesheet" asp-append-version="true" />
+
+<form method="post" action="@Url.Action("EditProduct", "Product")">
+    <input asp-for="@Model.product.ProductId" class="form-control" placeholder="ProductId" value="@Model.product.ProductId" style="display:none;">
+  <div class="form-group">
+        <label asp-for="@Model.product.Name">Name</label>
+        <input asp-for="@Model.product.Name" class="form-control" placeholder="Name">
+        <span asp-validation-for="@Model.product.Name" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+        <label asp-for="@Model.product.Description">Description</label>
+        <input asp-for="@Model.product.Description" class="form-control" placeholder="Description">
+        <span asp-validation-for="@Model.product.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.product.Price">Price</label>
+        <input asp-for="@Model.product.Price" class="form-control" placeholder="Price">
+        <span asp-validation-for="@Model.product.Price" class="text-danger"></span>
+    </div>s
+
+    <div class="form-group">
+        <label asp-for="@Model.product.Quantity">Quantity</label>
+        <input asp-for="@Model.product.Quantity" class="form-control" placeholder="Quantity">
+        <span asp-validation-for="@Model.product.Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.product.ProductCode">ProductCode</label>
+        <input asp-for="@Model.product.ProductCode" class="form-control" placeholder="ProductCode">
+        <span asp-validation-for="@Model.product.ProductCode" class="text-danger"></span>
+    </div>
+     <div class="form-group">
+        <label asp-for="@Model.product.SupplierId">Supplier</label>
+
+
+        <div class="container">
+
+            <div class="wrapper">
+
+                <input value="@Model.supplier.Name" type="text" name="search" id="supplierSearchInput" placeholder="Type to search" autocomplete="chrome-off">
+              <button><i class="fa fa-search"></i></button>
+              <div class="results">
+                <ul>
+                </ul>
+              </div>
+
+            </div>
+
+        </div>
+        <input asp-for="@Model.product.SupplierId" value="@Model.product.SupplierId" id="hiddenSupplierInput" style="display:none;">
+        <span asp-validation-for="@Model.product.SupplierId" class="text-danger"></span>
+
+        <input asp-for="@Model.product.CategoryId" value="3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>
+
+
+<script src="/js/Product/CreatProduct.js"></script>

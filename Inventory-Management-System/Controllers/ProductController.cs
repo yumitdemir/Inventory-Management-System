@@ -10,6 +10,7 @@ using System.Dynamic;
 
 namespace Inventory_Management_System.Controllers
 {
+    
     public class ProductController : Controller
     {
         private readonly IProductRepository _context;
@@ -100,9 +101,6 @@ namespace Inventory_Management_System.Controllers
         {
             Product product = new Product();
 
-            dynamic data = new ExpandoObject();
-            data.product = product;
-
             return View(product);
         }
 
@@ -119,6 +117,48 @@ namespace Inventory_Management_System.Controllers
            
 
         }
+
+
+        
+        public async Task<IActionResult> EditProduct(int id)
+        {
+            Product product = await _context.GetDataByIDAsync(id);
+            var suppliers = await _context.GetAllSupliers();
+            var supplier = suppliers.FirstOrDefault(i => i.SupplierId == product.SupplierId);
+            EditViewModel data = new EditViewModel();
+            data.product= product;
+            data.supplier = supplier;
+            return View(data);
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditProduct(Product product)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit the product");
+                return Redirect("EditProduct");
+            }
+
+            Product newProduct = new Product();
+            Console.WriteLine(product.ProductId + "dsadsads");
+            newProduct.ProductId = product.ProductId;
+            newProduct.Name = product.Name;
+            newProduct.Description = product.Description;
+            newProduct.Price = product.Price;
+            newProduct.Quantity = product.Quantity;
+            newProduct.ProductCode = product.ProductCode; 
+            newProduct.SupplierId = product.SupplierId;
+            newProduct.CategoryId = product.CategoryId;
+
+           
+            _context.Update(newProduct);
+
+            return RedirectToAction("Index");
+
+        }
+
 
 
     }

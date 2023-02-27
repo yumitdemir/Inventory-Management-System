@@ -1,9 +1,9 @@
 ﻿@model IndexDataSupplier
 
-<link href="/css/Product/Index.css" rel="stylesheet" asp-append-version="true" />
+<link href="/css/Supplier/Index.css" rel="stylesheet" asp-append-version="true" />
 
 
-<link href="/css/Product/Index.css" rel="stylesheet" />
+
 @{
     //prevPageIndex , nextPageIndex
     int prevPageIndex = Model.id - 1;
@@ -26,8 +26,9 @@
 
     <div class="create-buttons">
         <a class="btn btn-md btn-outline-primary">Creat New Category</a>
-        <a class="btn btn-md  btn-outline-primary">Creat New Supplier</a>
-        <a class="btn btn-md btn-primary" asp-action="CreateProduct" asp-controller="Product">Creat New Product</a>
+        <a class="btn btn-md btn-outline-primary " asp-action="CreateProduct" asp-controller="Product">Creat New Product</a>
+        <a class="btn btn-md btn-primary" asp-action="CreateSupplier" asp-controller="Supplier" >Creat New Supplier</a>
+        
     </div>
 </div>
 
