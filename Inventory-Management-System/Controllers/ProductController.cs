@@ -16,15 +16,22 @@ namespace Inventory_Management_System.Controllers
         public ProductController(IProductRepository context) {
             _context = context;
         }
-
-        public async Task<IActionResult> Index(int id, int showNum)
+     
+        public async Task<IActionResult> Index(int id, int showNum,string searchInput)
         {
+           
             if (showNum == 0)
             {
                 showNum = 50;
             }
             IEnumerable<Product> products = await _context.GetAllDataAsync();
-            IEnumerable<Supplier> suppliers = await _context.GetAllSupliers();   
+            IEnumerable<Supplier> suppliers = await _context.GetAllSupliers();
+
+            if (!string.IsNullOrEmpty(searchInput))
+            {
+                products = products.Where(p => p.Name.ToLower().Contains(searchInput.ToLower()));
+            }
+
             var categories = await _context.GetAllCategories();
             var maxPageIndex = Math.Ceiling((double)products.Count() / showNum);
             Console.WriteLine(maxPageIndex);
@@ -39,7 +46,7 @@ namespace Inventory_Management_System.Controllers
                 products = products.Skip((id - 1) * showNum).Take(showNum);
             }
 
-            IndexData data = new IndexData();
+            IndexDataProduct data = new IndexDataProduct();
             data.products = products;
             data.maxPageIndex = maxPageIndex;
             data.id = id;
@@ -49,12 +56,18 @@ namespace Inventory_Management_System.Controllers
             return View(data);
         }
 
+        public class newview
+        {
+            public string newView { get; set; }
+            public string currentSearch { get; set; }
+
+        }
 
         [HttpPost]
          [Route("api/Product/NewView")]
-        public IActionResult NewView([FromBody] string newView)
+        public IActionResult NewView([FromBody] newview newView)
         {
-           var a =  Url.Action("Index", "Product", new { id = 1, showNum = int.Parse(newView) });
+           var a =  Url.Action("Index", "Product", new { id = 1, showNum = int.Parse(newView.newView), searchInput= newView.currentSearch });
             return Ok(a);
         }
 

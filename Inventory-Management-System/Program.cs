@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 //!Product Repository connection
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 
 //! Database connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -43,7 +44,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "ProductList",
-    pattern: "/{id}/{showNum?}",
+    pattern: "/{id}/{showNum?}/{searchInput?}",
     defaults: new { controller = "Product", action = "Index" });
 
 
@@ -51,6 +52,11 @@ app.MapControllerRoute(
     name: "CreateProduct",
     pattern: "/CreateProduct",
     defaults: new { controller = "Product", action = "CreateProduct" });
+
+app.MapControllerRoute(
+    name: "SupplierList",
+    pattern: "/{id}/{showNum?}/{searchIndex?}",
+    defaults: new { controller = "Supplier", action = "CreateProduct" });
 
 
 app.Run();

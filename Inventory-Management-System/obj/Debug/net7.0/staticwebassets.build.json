@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bXHp3YSupwdn2QHmKM0yWsYZyT9pnqutCDjLisZPcoc=",
+  "Hash": "ASGT/IQMtQoI5LVYuh3VkxZp1dgG+yfX7Ipc2bd6vSE=",
   "Source": "Inventory-Management-System",
   "BasePath": "_content/Inventory-Management-System",
   "Mode": "Default",
@@ -136,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\js\\Product\\CreatProduct.js"
     },
     {
-      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Product\\Index.js",
+      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Product\\Indexx.js",
       "SourceId": "Inventory-Management-System",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\",
       "BasePath": "_content/Inventory-Management-System",
-      "RelativePath": "js/Product/Index.js",
+      "RelativePath": "js/Product/Indexx.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +150,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Product\\Index.js"
+      "OriginalItemSpec": "wwwroot\\js\\Product\\Indexx.js"
     },
     {
       "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\site.js",
@@ -168,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Supplier\\Index.js",
+      "SourceId": "Inventory-Management-System",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\",
+      "BasePath": "_content/Inventory-Management-System",
+      "RelativePath": "js/Supplier/Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Supplier\\Index.js"
     },
     {
       "Identity": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

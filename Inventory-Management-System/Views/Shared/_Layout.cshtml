@@ -6,9 +6,7 @@
     <title>@ViewData["Title"] - Inventory</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    
-    
-
+  
 
    
 </head>
@@ -30,7 +28,7 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Product" asp-action="Index" asp-route-id="1" asp-route-showNum="50">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Product" asp-action="Index" asp-route-id="1" asp-route-showNum="50">Suppliers</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Supplier" asp-action="Index" asp-route-id="1" asp-route-showNum="50">Suppliers</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Product" asp-action="Index" asp-route-id="1" asp-route-showNum="50">Categories</a>
@@ -59,4 +57,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

@@ -25,8 +25,12 @@
       "PackagePath": "staticwebassets\\js\\Product\\CreatProduct.js"
     },
     {
-      "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Product\\Index.js",
-      "PackagePath": "staticwebassets\\js\\Product\\Index.js"
+      "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Product\\Indexx.js",
+      "PackagePath": "staticwebassets\\js\\Product\\Indexx.js"
+    },
+    {
+      "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\Supplier\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Supplier\\Index.js"
     },
     {
       "Id": "C:\\Users\\umitd\\OneDrive\\Desktop\\Inventory-Management-System\\Inventory-Management-System\\wwwroot\\js\\site.js",
