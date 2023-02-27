@@ -2,7 +2,7 @@
 <link href="/css/Product/CreatProduct.css" rel="stylesheet" asp-append-version="true" />
 
 <form method="post"  action="@Url.Action("CreateProduct", "Product")">
-  @*<div class="form-group">
+  <div class="form-group">
         <label asp-for="Name">Name</label>
         <input asp-for="Name" class="form-control" placeholder="Name">
         <span asp-asp-validation-for="Name" class="text-danger"></span>
@@ -29,7 +29,7 @@
         <span asp-asp-validation-for="ProductCode" class="text-danger"></span>
     </div>
      <div class="form-group">
-        <label asp-for="Supplier">Supplier</label>
+        <label asp-for="SupplierId">Supplier</label>
     <div class="container">
         <div class="wrapper">
            
@@ -41,19 +41,15 @@
           </div>
         </div>
     </div>
-        <input asp-for="Supplier" type="text" id="hiddenSupplierInput">
-           <input asp-for="Categorie" value="1" type="text" id="hiddenCategoryInput">
+        <input asp-for="CategoryId" value="3">
         <button type="submit" class="btn btn-primary">Submit</button>
-    </div>*@
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <input asp-for="Name" value="deneneee">
-    <input asp-for="Description" value="hfhghf">
-    <input asp-for="Price" value="555">
-    <input asp-for="Quantity" value="555">
-    <input asp-for="ProductCode" value="gdf">
-    <input asp-for="SupplierId" value="2">
-    <input asp-for="CategoryId" value="3">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+   
+
+    
+   
+   
 </form>
 
 

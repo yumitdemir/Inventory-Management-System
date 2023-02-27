@@ -20,6 +20,11 @@ namespace Inventory_Management_System.Repository
             return await _context.Suppliers.ToListAsync();
         }
 
+        public async Task<IEnumerable<Categorie>> GetAllCategories()
+        {
+            return await _context.Categories.ToListAsync();
+        }
+
         public async Task<IEnumerable<Product>> GetAllDataAsync()
         {
             return await _context.Products.ToListAsync();

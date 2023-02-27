@@ -5,10 +5,11 @@ namespace Inventory_Management_System.Interfaces
     public interface IProductRepository
     {
         Task<IEnumerable<Supplier>> GetAllSupliers();
+        Task<IEnumerable<Categorie>> GetAllCategories();
         Task<IEnumerable<Product>> GetAllDataAsync();
 
         Task<Product> GetDataByIDAsync(int id);
-
+       
 
 
 

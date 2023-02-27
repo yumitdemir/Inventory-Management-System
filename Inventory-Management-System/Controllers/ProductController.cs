@@ -24,6 +24,8 @@ namespace Inventory_Management_System.Controllers
                 showNum = 50;
             }
             IEnumerable<Product> products = await _context.GetAllDataAsync();
+            IEnumerable<Supplier> suppliers = await _context.GetAllSupliers();   
+            var categories = await _context.GetAllCategories();
             var maxPageIndex = Math.Ceiling((double)products.Count() / showNum);
             Console.WriteLine(maxPageIndex);
             //! If id doesn't exist in the link it will return 0
@@ -37,11 +39,13 @@ namespace Inventory_Management_System.Controllers
                 products = products.Skip((id - 1) * showNum).Take(showNum);
             }
 
-            dynamic data = new ExpandoObject();
+            IndexData data = new IndexData();
             data.products = products;
             data.maxPageIndex = maxPageIndex;
             data.id = id;
             data.showNum = showNum;
+            data.suppliers = suppliers;
+            data.categories = categories;
             return View(data);
         }
 
@@ -98,7 +102,8 @@ namespace Inventory_Management_System.Controllers
             }
             
             _context.Add(product); //!add is async function I created on repostiroy
-            return View("Index");
+            return RedirectToAction("Index", new { id = "1", showNum = 50 });
+           
 
         }
 
