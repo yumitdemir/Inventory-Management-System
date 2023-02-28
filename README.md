@@ -1,14 +1,13 @@
 ﻿# Inventory-Management-System
 https://youtu.be/_rARWnbeYuI
 
-![1](https://user-images.githubusercontent.com/108368506/221858264-b43c1869-a8b1-4574-b3b7-8e5e7c423975.PNG)
-![2](https://user-images.githu
-![10](https://user-images.githubusercontent.co
-![11](https://user-images.githubusercontent.com/108368506/221858302-b25c2014-3530-4d8b-ba27-05b3e2a24ae5.PNG)
-m/108368506/221858296-ddb3f6fb-b7e4-459f-8328-f660ced66b6f.PNG)
-busercontent.com/108368506/221858276-02061436-ce46-4221-b4de-5d42093ebf00.PNG)
-![3](https://user-images.githubusercontent.com/108368506/221858277-49645582-4aa8-43da-9b76-1faf04a94431.PNG)
-![6](https://user-images.githubusercontent.com/108368506/221858284-0f8a7297-fb47-4b87-be1e-6adb8f6179eb.PNG)
-![9](https://user-images.githubusercontent.com/108368506/221858292-a7808497-27d2-4551-a0dd-7d6575afac5a.PNG)
-
-![8](https://user-images.githubusercontent.com/108368506/221858290-4aa839cb-467c-4fcd-9cbd-51dc7fda303c.PNG)
+![11](https://user-images.githubusercontent.com/108368506/221858926-fa9d6ad7-7a37-4be7-9935-408b94b4b033.PNG)
+![10](https://user-images.githubusercontent.com/108368506/221858929-da978752-f219-404f-8163-b528e6449e51.PNG)
+![8](https://user-images.githubusercontent.com/108368506/221858932-731a3a1c-a8c9-4199-9ff2-1538ae0d127b.PNG)
+![2](https://user-images.githubusercontent.com/108368506/221858934-92846a8b-6ef9-48d8-8658-794552ee112c.PNG)
+![3](https://user-images.githubusercontent.com/108368506/221858936-a0970074-a7a3-481d-89b6-85645e4645ea.PNG)
+![Inventory-management](https://user-images.githubusercontent.com/108368506/221858937-ff475590-992d-48a4-b091-d75f48c55c83.png)
+![1](https://user-images.githubusercontent.com/108368506/221858943-381e4fe9-c715-40af-bcb9-e66f36d60cce.PNG)
+![Capture](https://user-images.githubusercontent.com/108368506/221858945-25ce58f7-4738-488a-a834-2bcccf009812.PNG)
+![6](https://user-images.githubusercontent.com/108368506/221858948-bd59be61-7a15-4ee9-a757-e9dbce167c61.PNG)
+![9](https://user-images.githubusercontent.com/108368506/221858951-86eeb2be-7afe-445e-a2e0-8fb19835573f.PNG)
