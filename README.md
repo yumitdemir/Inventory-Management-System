@@ -1,5 +1,6 @@
 ﻿# Inventory-Management-System
-https://youtu.be/_rARWnbeYuI
+
+[![Video Title](https://youtu.be/_rARWnbeYuI)
 
 ![11](https://user-images.githubusercontent.com/108368506/221858926-fa9d6ad7-7a37-4be7-9935-408b94b4b033.PNG)
 ![10](https://user-images.githubusercontent.com/108368506/221858929-da978752-f219-404f-8163-b528e6449e51.PNG)
