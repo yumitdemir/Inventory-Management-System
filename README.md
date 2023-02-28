@@ -11,7 +11,6 @@ This is a product management website created using ASP.NET MVC, Entity Framework
 ![8](https://user-images.githubusercontent.com/108368506/221858932-731a3a1c-a8c9-4199-9ff2-1538ae0d127b.PNG)
 ![2](https://user-images.githubusercontent.com/108368506/221858934-92846a8b-6ef9-48d8-8658-794552ee112c.PNG)
 ![3](https://user-images.githubusercontent.com/108368506/221858936-a0970074-a7a3-481d-89b6-85645e4645ea.PNG)
-![Inventory-management](https://user-images.githubusercontent.com/108368506/221858937-ff475590-992d-48a4-b091-d75f48c55c83.png)
 ![1](https://user-images.githubusercontent.com/108368506/221858943-381e4fe9-c715-40af-bcb9-e66f36d60cce.PNG)
 ![Capture](https://user-images.githubusercontent.com/108368506/221858945-25ce58f7-4738-488a-a834-2bcccf009812.PNG)
 ![6](https://user-images.githubusercontent.com/108368506/221858948-bd59be61-7a15-4ee9-a757-e9dbce167c61.PNG)
