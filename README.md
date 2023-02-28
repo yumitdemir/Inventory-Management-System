@@ -1,5 +1,5 @@
 
-#Tour of the project
+Tour of the project
 [https://youtu.be/_rARWnbeYuI](https://www.youtube.com/watch?v=_rARWnbeYuI)
 
 This is a product management website created using ASP.NET MVC, Entity Framework, and Microsoft SQL. It includes a table of products, suppliers, and categories, and allows users to edit, delete, and search for products. The website uses server-side paging and ValidationAttributes to enhance functionality and ensure data validation. It also employs repositories to facilitate data management. In addition, I've used Chart.js to display a graph for visualizing product data. 
