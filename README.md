@@ -1,6 +1,9 @@
-﻿# Inventory-Management-System
 
+#Tour of the project
 [https://youtu.be/_rARWnbeYuI](https://www.youtube.com/watch?v=_rARWnbeYuI)
+
+This is a product management website created using ASP.NET MVC, Entity Framework, and Microsoft SQL. It includes a table of products, suppliers, and categories, and allows users to edit, delete, and search for products. The website uses server-side paging and ValidationAttributes to enhance functionality and ensure data validation. It also employs repositories to facilitate data management. In addition, I've used Chart.js to display a graph for visualizing product data. 
+
 
 
 ![11](https://user-images.githubusercontent.com/108368506/221858926-fa9d6ad7-7a37-4be7-9935-408b94b4b033.PNG)
