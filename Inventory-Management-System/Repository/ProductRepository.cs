@@ -32,6 +32,7 @@ namespace Inventory_Management_System.Repository
         public async Task<Product> GetDataByIDAsync(int id)
         {
             return await _context.Products.FirstOrDefaultAsync(i => i.ProductId.Equals(id));
+
         }
         public bool Add(Product product)
         {

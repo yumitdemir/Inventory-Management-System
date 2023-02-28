@@ -1,6 +1,10 @@
 ﻿@model EditViewModel
 <link href="/css/Product/CreatProduct.css" rel="stylesheet" asp-append-version="true" />
 
+@{
+
+}
+
 <form method="post" action="@Url.Action("EditProduct", "Product")">
     <input asp-for="@Model.product.ProductId" class="form-control" placeholder="ProductId" value="@Model.product.ProductId" style="display:none;">
   <div class="form-group">
@@ -38,7 +42,7 @@
             <div class="wrapper">
 
                 <input value="@Model.supplier.Name" type="text" name="search" id="supplierSearchInput" placeholder="Type to search" autocomplete="chrome-off">
-              <button><i class="fa fa-search"></i></button>
+             
               <div class="results">
                 <ul>
                 </ul>

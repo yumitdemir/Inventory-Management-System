@@ -126,6 +126,17 @@ namespace Inventory_Management_System.Controllers
             Product product = await _context.GetDataByIDAsync(id);
             var suppliers = await _context.GetAllSupliers();
             var supplier = suppliers.FirstOrDefault(i => i.SupplierId == product.SupplierId);
+            if (supplier == null)
+            {
+                supplier = new Supplier();
+                supplier.SupplierId = 0;
+                supplier.Name = "";
+                supplier.Email = "";
+                supplier.Phone= "";
+                supplier.Address = "";
+            }
+
+
             EditViewModel data = new EditViewModel();
             data.product= product;
             data.supplier = supplier;

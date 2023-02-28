@@ -1,0 +1,38 @@
+﻿@model Supplier
+<link href="/css/Product/CreatProduct.css" rel="stylesheet" asp-append-version="true" />
+
+
+
+<form method="post" action="@Url.Action("EditSupplier", "Supplier")">
+    
+    <input asp-for="SupplierId" value="@Model.SupplierId" style="display:none;" />
+  <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" placeholder="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+  </div>
+    <div class="form-group">
+        <label asp-for="Address">Address</label>
+        <input asp-for="Address" class="form-control" placeholder="Description">
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone">Price</label>
+        <input asp-for="Phone" class="form-control" placeholder="Price">
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>s
+
+    <div class="form-group">
+        <label asp-for="Email">Quantity</label>
+        <input asp-for="Email" class="form-control" placeholder="Quantity">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    
+   
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
+
+</form>
+
+
+

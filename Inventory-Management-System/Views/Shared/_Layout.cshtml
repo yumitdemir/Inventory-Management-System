@@ -16,7 +16,7 @@
     <header >
      
             <ul id="nav-bar" class="nav flex-column">
-                <a class="navbar-brand" id="navBrand" asp-area="" asp-controller="Home" asp-action="Index">IManager</a>
+                <a class="navbar-brand" id="navBrand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-bars-progress"></i> <strong>IManager</strong> </a>
                 <li class="nav-item">
                     <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                 </li>
@@ -29,6 +29,10 @@
                 <li class="nav-item">
                     <a class="nav-link text-light" asp-area="" asp-controller="Product" asp-action="Index" asp-route-id="1" asp-route-showNum="50">Categories</a>
                 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Supplier" asp-action="EditSupplier" asp-route-id="5">Categories</a>
+
                 </li>
                
             </ul>

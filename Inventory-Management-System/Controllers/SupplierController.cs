@@ -45,7 +45,9 @@ namespace Inventory_Management_System.Controllers
             data.id = id;
             data.showNum = showNum;
             data.suppliers = suppliers;
-           
+            data.searchInput = searchInput;
+
+
             return View(data);
            
         }
@@ -88,6 +90,46 @@ namespace Inventory_Management_System.Controllers
 
 
         }
+
+
+        public async Task<IActionResult> EditSupplier(int id)
+        {
+            Supplier supplier = await _context.GetDataByIDAsync(id);
+            return View(supplier);
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditSupplier(Supplier supplier)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit the supplier");
+                return Redirect("EditSupplier");
+            }
+
+            Supplier newSupplier = new Supplier();
+
+            newSupplier.SupplierId = supplier.SupplierId;
+            newSupplier.Name = supplier.Name;
+            newSupplier.Email = supplier.Email;
+            newSupplier.Address = supplier.Address;
+            newSupplier.Phone = supplier.Phone;
+
+            _context.Update(newSupplier);
+
+            return RedirectToAction("Index", new { id = 1,  showNum = 50 });
+
+        }
+        public async Task<IActionResult> DeleteSupplier(int supplierId, int id, string searchInput, int showNum)
+        {
+
+            Supplier supplier = await _context.GetDataByIDAsync(supplierId);
+            _context.Delete(supplier);
+
+            return RedirectToAction("Index", new { id = id, searchInput = searchInput, showNum = showNum });
+        }
+
 
     }
 }

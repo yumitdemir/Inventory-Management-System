@@ -143,11 +143,24 @@
                     <a class="nav-link text-dark" asp-controller="SupplierDetail" asp-action="Index" asp-route-id="@item.SupplierId" asp-route-showNum="@Model.showNum">
 
                         @{
-                            var supplierName = Model.suppliers.FirstOrDefault(a => a.SupplierId == item?.SupplierId).Name;
+
+                            var supplierName = "";
+                            if (Model.suppliers != null && item != null && item.SupplierId != null)
+                            {
+                                var supplier = Model.suppliers.FirstOrDefault(a => a.SupplierId == item.SupplierId);
+                                if (supplier != null && supplier.Name != null)
+                                {
+                                    supplierName = supplier.Name;
+                                }
+                                else
+                                {
+                                    supplierName = "Supplier Deleted";
+                                }
+                            }
 
                        }
-
                         @supplierName
+                        
                     </a>
                    
                 </td>

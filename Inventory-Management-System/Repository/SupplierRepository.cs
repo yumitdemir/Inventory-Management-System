@@ -23,7 +23,7 @@ namespace Inventory_Management_System.Repository
 
         public async Task<Supplier> GetDataByIDAsync(int id)
         {
-            return await _context.Suppliers.FirstOrDefaultAsync(i => i.Equals(id));
+            return await _context.Suppliers.FirstOrDefaultAsync(i => i.SupplierId.Equals(id));
         }
         public bool Add(Supplier supplier)
         {

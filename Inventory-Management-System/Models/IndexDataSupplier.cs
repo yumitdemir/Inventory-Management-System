@@ -6,6 +6,9 @@
         public int id { get; set; }
         public int showNum { get; set; }
         public IEnumerable<Supplier> suppliers { get; set; }
-        
+
+        public string searchInput { get; set; }
+
+
     }
 }

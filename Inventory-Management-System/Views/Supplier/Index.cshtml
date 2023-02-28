@@ -104,7 +104,9 @@
             <th style="width: 200px">
                 Email
             </th>
-
+            <th style="width: 0px">
+                Actions
+            </th>
           
 
         </tr>
@@ -127,7 +129,14 @@
                 <td>
                     @item.Email
                 </td>
-               
+                    <td>
+                        <div class="d-flex justify-content-around ">
+                            <a asp-action="EditSupplier" asp-controller="Supplier" asp-route-id="@item.SupplierId"> <i class="fa-solid fa-pen-to-square"></i></a>
+
+
+                            <a asp-action="DeleteSupplier" asp-controller="Supplier" asp-route-supplierId="@item.SupplierId" asp-route-id="@Model.id" asp-route-searchInput="@Model.searchInput" asp-route-showNum="@Model.showNum"><i class="fa-sharp fa-solid fa-trash"></i></a>
+                        </div>
+                    </td>
                
             </tr>
 
